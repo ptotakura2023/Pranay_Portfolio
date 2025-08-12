@@ -50,10 +50,7 @@ export default function AdminPage() {
   const [user, setUser] = useState<unknown>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
-  const [form, setForm] = useState({
-    title: '', slug: '', excerpt: '', content: '', cover_image: '', meta_title: '', meta_description: '', meta_keywords: '', author: ''
-  });
-  const [submitting, setSubmitting] = useState(false);
+  // ...existing code...
 
   useEffect(() => {
     // Mock user authentication
