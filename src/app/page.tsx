@@ -4,7 +4,6 @@ import styled, { keyframes } from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaArrowRight, FaBrain, FaCode, FaEnvelopeOpenText } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 
 // Keyframes for blinking and scaling animation
 const blink = keyframes`
@@ -504,62 +503,7 @@ const BigIcon = styled(FaEnvelopeOpenText)`
   }
 `;
 
-const ResearchSection = styled(Section)`
-  background: #000;
-`;
-
-const ResearchCard = styled(motion.div)`
-  background: #111;
-  border: 1px solid #222;
-  border-radius: 12px;
-  padding: 40px;
-  margin-top: 48px;
-  transition: border 0.2s;
-
-  &:hover {
-    border: 1px solid #fff;
-  }
-`;
-
-const ResearchTitle = styled.h3`
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #fff;
-  margin: 0 0 24px 0;
-  line-height: 1.3;
-`;
-
-const ResearchDescription = styled.p`
-  color: #999;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin: 0 0 32px 0;
-`;
-
-const ResearchPoints = styled.ul`
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-`;
-
-const ResearchPoint = styled(motion.li)`
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  color: #fff;
-  font-size: 1.1rem;
-  line-height: 1.5;
-
-  &::before {
-    content: "•";
-    color: #fff;
-    font-size: 1.5rem;
-    line-height: 1;
-  }
-`;
+// ...existing code...
 
 // Add styled component for the green glowing dot and status
 const StatusWrap = styled.div`
