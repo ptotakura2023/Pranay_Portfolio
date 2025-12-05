@@ -841,7 +841,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
             >
-              <ProjectTitle>TA Hub: TA Management Portal at North University's Computer Science Department</ProjectTitle>
+              <ProjectTitle>TA Hub: TA Management Portal at North University&apos;s Computer Science Department</ProjectTitle>
               <ProjectDescription>
                 An award-winning TA management portal architected with Java, Spring Boot, and React.js. By automating the entire lifecycle across four role-based portals, this solution reduced administrative workload by 60% and accelerated the assignment process by over 75%.
               </ProjectDescription>
