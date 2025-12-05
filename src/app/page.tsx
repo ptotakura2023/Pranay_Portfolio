@@ -607,6 +607,15 @@ export default function Home() {
   const [isMounted, setIsMounted] = useState(false);
 
   // Experience points as arrays for bullet points and line breaks
+  const experiencePointsUSAA = [
+  "Developed and maintained scalable full-stack features for a member-facing financial analytics platform using Python (Flask) and React.",
+  "Engineered secure RESTful APIs using JWT authentication to serve financial data, improving retrieval efficiency by 30% and supporting 10,000+ daily user sessions.",
+  "Built an interactive data-visualization dashboard that delivered actionable insights to members, boosting user engagement by 40%.",
+  "Accelerated frontend development by creating reusable React components, contributing to a 15% faster delivery of the product MVP.",
+  "Authored comprehensive unit and integration tests achieving 90% code coverage, ensuring high reliability and secure application behavior.",
+  "Contributed to a culture of operational excellence and member-first design, aligning with USAA&apos;s core values."
+];
+
   const experiencePointsAccenture = [
     "Developed scalable backend RESTful APIs using Python and C#, accelerating feature delivery by 25%.",
     "Designed and implemented CI/CD pipelines using Jenkins and GitHub Actions to automate testing and deployment workflows for web applications.",
@@ -871,6 +880,39 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
             >
+              <ExperienceHeader>
+                <CompanyName>USAA</CompanyName>
+                <Role>FullStack Developer</Role>
+                <Duration>Jan 2021 - Present</Duration>
+              </ExperienceHeader>
+              <ExperienceContent>
+                <Description as="ul">
+                  {experiencePointsUSAA.map((point, idx) => (
+                    <li key={idx} style={{ marginBottom: 8, lineHeight: 1.7 }}>
+                      {point}
+                    </li>
+                  ))}
+                </Description>
+                <TechStack>
+                  <TechTag>Python</TechTag>
+                  <TechTag>Flask</TechTag>
+                  <TechTag>Django</TechTag>
+                  <TechTag>React</TechTag>
+                  <TechTag>JavaScript</TechTag>
+                  <TechTag>REST APIs</TechTag>
+                  <TechTag>AWS</TechTag>
+                  <TechTag>CI/CD</TechTag>
+                  <TechTag>Docker</TechTag>
+                  <TechTag>Agile</TechTag>
+                  <TechTag>Financial Data Analysis</TechTag>
+                  <TechTag>Data Visualization</TechTag>
+                  <TechTag>SQL</TechTag>
+                  <TechTag>Secure Application Development</TechTag>
+
+                </TechStack>
+              </ExperienceContent>
+
+
               <ExperienceHeader>
                 <CompanyName>Accenture</CompanyName>
                 <Role>Software Engineer - FullStack & Devops</Role>
