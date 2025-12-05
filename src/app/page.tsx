@@ -883,7 +883,7 @@ export default function Home() {
               <ExperienceHeader>
                 <CompanyName>USAA</CompanyName>
                 <Role>FullStack Developer</Role>
-                <Duration>Jan 2021 - Present</Duration>
+                <Duration>Jan 2025 - Present</Duration>
               </ExperienceHeader>
               <ExperienceContent>
                 <Description as="ul">
@@ -916,7 +916,7 @@ export default function Home() {
               <ExperienceHeader>
                 <CompanyName>Accenture</CompanyName>
                 <Role>Software Engineer - FullStack & Devops</Role>
-                <Duration>Jul 2022 - Jul 2023</Duration>
+                <Duration>Jan 2021 - Jul 2023</Duration>
               </ExperienceHeader>
               <ExperienceContent>
                 <Description as="ul">
