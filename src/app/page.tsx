@@ -620,6 +620,30 @@ export default function Home() {
 
   const certifications = [
   {
+    title: "Career Essentials in Generative AI by Microsoft and LinkedIn Learning Path",
+    org: "Microsoft",
+    date: "Issued Sep 2025",
+    link: "https://www.linkedin.com/learning/certificates/1162ab7db5fce3e725c526de3701dd4a154c813dd1607299ce9752a85b0a8629?trk=share_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B9rVCQlzCSOCJHBsJM9Nn1A%3D%3D",
+  },
+  {
+    title: "Cisco CCNA (200-301) Cert Prep: 1 Network Fundamentals and Access",
+    org: "LinkedIn",
+    date: "Issued Sep 2025",
+    link: "https://www.linkedin.com/learning/certificates/3d7c986027a3d234976610648a8026c1bf27d083021bd78f98f3091fc4044742?trk=share_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B9rVCQlzCSOCJHBsJM9Nn1A%3D%3D",
+  },
+  {
+    title: "SQL (Advanced)",
+    org: "HackerRank",
+    date: "Issued Aug 2025",
+    link: "https://www.hackerrank.com/certificates/3964177b2cb9",
+  },
+  {
+    title: "Walmart Advanced Software Engineering Virtual Experience Program",
+    org: "Forage",
+    date: "Issued Aug 2025",
+    link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/prBZoAihniNijyD6d/oX6f9BbCL9kJDJzfg_prBZoAihniNijyD6d_GPMvFoGKZtbXnPs8s_1755313314144_completion_certificate.pdf",
+  },
+  {
     title: "Technical Interview Preparation",
     org: "CodePath",
     date: "Issued May 2025",
@@ -680,7 +704,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 1, ease: 'easeOut' }}
           >
-            Delray Beach, FL<br />
+            Austin, TX, United States<br />
             <a href="mailto:pranay.thotakura@gmail.com">pranay.thotakura@gmail.com</a> &nbsp;<br />
             <a href="https://www.linkedin.com/in/pranay-babu-totakura" target="_blank" rel="noopener noreferrer">linkedin.com/in/pranay-babu-totakura</a> &nbsp;|&nbsp; <a href="https://github.com/ptotakura2023" target="_blank" rel="noopener noreferrer">https://github.com/ptotakura2023</a>
           </ContactBlock>
@@ -719,6 +743,44 @@ export default function Home() {
               </ProjectLink>
             </ProjectCard>
 
+
+
+            <ProjectCard
+              href="https://github.com/ptotakura2023/Pranay_Portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+            >
+              <ProjectTitle>Professional Portfolio Website</ProjectTitle>
+              <ProjectDescription>
+                A high-performance personal portfolio built with Next.js, React, and Framer Motion. By leveraging static site generation and reusable UI components, this application achieved a 98+ Google Lighthouse score and ensured millisecond load times with 100% uptime.
+              </ProjectDescription>
+              <ProjectLink>
+                View Project <FaArrowRight />
+              </ProjectLink>
+            </ProjectCard>
+
+
+            <ProjectCard
+              href="https://github.com/ptotakura2023/COT_6930_GenAI_project"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              <ProjectTitle>StudyPal: A GenAI-Powered StudyBot</ProjectTitle>
+              <ProjectDescription>
+                A generative AI study assistant for Discord built with Python, LangChain, and OpenAI GPT-4. By engineering a memory-aware routing system, this bot resolved over 1,200 academic queries with more than 90% accuracy and boosted student productivity by 35%.
+              </ProjectDescription>
+              <ProjectLink>
+                View Project <FaArrowRight />
+              </ProjectLink>
+            </ProjectCard>
+
+
             <ProjectCard
               href="https://github.com/ptotakura2023/portfolio-analytics-dashboard"
               target="_blank"
@@ -737,21 +799,58 @@ export default function Home() {
             </ProjectCard>
 
             <ProjectCard
-              href="https://github.com/ptotakura2023/COT_6930_GenAI_project"
+              href="https://github.com/ptotakura2023/AI-Content-Optimizer-cms"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
             >
-              <ProjectTitle>StudyPal: A GenAI-Powered StudyBot</ProjectTitle>
+              <ProjectTitle>AI Content Optimizer-CMS</ProjectTitle>
               <ProjectDescription>
-                A generative AI study assistant for Discord built with Python, LangChain, and OpenAI GPT-4. By engineering a memory-aware routing system, this bot resolved over 1,200 academic queries with more than 90% accuracy and boosted student productivity by 35%.
+                A full-stack AI content optimizer built with React, TypeScript, Node.js, and the Google Gemini API. By engineering automated SEO asset generation and robust CI/CD pipelines, this solution reduced manual editorial workloads by over 40% and cut deployment times by 95%.
               </ProjectDescription>
               <ProjectLink>
                 View Project <FaArrowRight />
               </ProjectLink>
             </ProjectCard>
+
+            <ProjectCard
+              href="https://github.com/ptotakura2023/Closest-Pair-Algorithm-Analysis"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+            >
+              <ProjectTitle>Algorithmic Performance Analysis: Closest Pair of Points</ProjectTitle>
+              <ProjectDescription>
+                A computational geometry performance analysis built with Python to solve the Closest Pair of Points problem. By benchmarking a divide-and-conquer strategy (O(n log n)) against brute force, this project validated theoretical efficiency and demonstrated superior scalability across datasets exceeding 50,000 points.
+              </ProjectDescription>
+              <ProjectLink>
+                View Project <FaArrowRight />
+              </ProjectLink>
+            </ProjectCard>
+
+
+            <ProjectCard
+              href="https://github.com/CEN5035-Fall2023-SE/cen5035-se-final-project-se-final-project-group10"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+            >
+              <ProjectTitle>TA Hub: TA Management Portal at North University's Computer Science Department</ProjectTitle>
+              <ProjectDescription>
+                An award-winning TA management portal architected with Java, Spring Boot, and React.js. By automating the entire lifecycle across four role-based portals, this solution reduced administrative workload by 60% and accelerated the assignment process by over 75%.
+              </ProjectDescription>
+              <ProjectLink>
+                View Project <FaArrowRight />
+              </ProjectLink>
+            </ProjectCard>
+
+            
           </ProjectGrid>
         </Container>
       </Section>
