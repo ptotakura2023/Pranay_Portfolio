@@ -608,23 +608,21 @@ export default function Home() {
 
   // Experience points as arrays for bullet points and line breaks
   const experiencePointsUSAA = [
-  "Developed and maintained scalable full-stack features for a member-facing financial analytics platform using Python (Flask) and React.",
-  "Engineered secure RESTful APIs using JWT authentication to serve financial data, improving retrieval efficiency by 30% and supporting 10,000+ daily user sessions.",
-  "Built an interactive data-visualization dashboard that delivered actionable insights to members, boosting user engagement by 40%.",
-  "Accelerated frontend development by creating reusable React components, contributing to a 15% faster delivery of the product MVP.",
-  "Authored comprehensive unit and integration tests achieving 90% code coverage, ensuring high reliability and secure application behavior.",
-  "Contributed to a culture of operational excellence and member-first design, aligning with USAA&apos;s core values."
+    "Architected and deployed scalable, full-stack features for a member-facing financial analytics platform using Python (Django) and React, supporting 10,000+ daily active sessions.",
+    "Engineered secure RESTful APIs utilizing JWT for authentication and PostgreSQL for data persistence, improving data retrieval efficiency by 30%.",
+    "Automated legacy manual tracking processes, transitioning internal stakeholders from static Excel workflows to a centralized, real-time analytics dashboard that boosted user engagement by 40%.",
+    "Containerized microservices using Docker and managed cloud deployments to AWS via CI/CD pipelines, reducing deployment errors and manual overhead by 25%.",
+    "Authored comprehensive unit and integration tests (Pytest/Jest), achieving 90% code coverage to ensure high-reliability and security in a compliance-heavy financial environment.",
+    "Collaborated in an Agile environment, contributing to a 15% faster delivery of the product MVP through the development of a reusable React component library."
 ];
 
   const experiencePointsAccenture = [
-    "Developed scalable backend RESTful APIs using Python and C#, accelerating feature delivery by 25%.",
-    "Designed and implemented CI/CD pipelines using Jenkins and GitHub Actions to automate testing and deployment workflows for web applications.",
-    "Deployed containerized microservices on Azure using Docker, improving application portability and managing infrastructure-as-code.",
-    "Built automation tools and engineering dashboards in React and CSS3, reducing manual workload by 20%.",
-    "Wrote comprehensive unit and integration tests, achieving 85% test coverage for critical components.",
-    "Implemented security best practices for web applications, including input validation and authentication/authorization mechanisms.",
-    "Collaborated in an Agile team using Git for version control, participating in code reviews to maintain high standards of code quality.",
-    "Troubleshot and optimized legacy code, improving website performance and reducing bug rates by 30%."
+    "Engineered scalable backend RESTful APIs in Python for a clinical trial platform, accelerating the delivery of critical data features to research scientists by 25%.",
+    "Leveraged Kafka within an event-driven architecture to scale real-time clinical data ingestion, ensuring high-throughput processing and zero-latency alerts for critical patient updates.",
+    "Orchestrated robust CI/CD pipelines using Jenkins and Docker, fully automating the deployment workflow to Microsoft Azure and ensuring 99.9% system availability.",
+    "Developed internal automation tools and interactive data dashboards in React, reducing the manual data aggregation workload for research teams by 20%.",
+    "Optimized legacy code and engineered automated validation suites achieving 85% test coverage, reducing critical bug rates by 30% for compliance-focused components.",
+    "Participated in rigorous code reviews and Agile sprint planning, mentoring junior developers to maintain high architectural standards and ensure zero-defect delivery."
   ];
 
   const certifications = [
@@ -916,7 +914,7 @@ export default function Home() {
               <ExperienceHeader>
                 <CompanyName>Accenture</CompanyName>
                 <Role>Software Engineer - FullStack & Devops</Role>
-                <Duration>Jan 2021 - Jul 2023</Duration>
+                <Duration>Jun 2020 - Jul 2023</Duration>
               </ExperienceHeader>
               <ExperienceContent>
                 <Description as="ul">
@@ -928,7 +926,6 @@ export default function Home() {
                 </Description>
                 <TechStack>
                   <TechTag>Python</TechTag>
-                  <TechTag>C#</TechTag>
                   <TechTag>React</TechTag>
                   <TechTag>REST APIs</TechTag>
                   <TechTag>CI/CD</TechTag>
