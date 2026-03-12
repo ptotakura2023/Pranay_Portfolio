@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   images: {
     domains: ['randomuser.me'],
   },
+  compiler: {
+    styledComponents: true,
+  },
 };
 
 export default nextConfig;

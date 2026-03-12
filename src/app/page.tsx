@@ -979,7 +979,7 @@ export default function Home() {
                 <TechChip>Collaboration & Teamwork</TechChip>
                 <TechChip>Open Source Contributions</TechChip>
 
-                
+  
               </TechChips>
             </SkillCategory>
 
