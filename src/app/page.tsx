@@ -608,24 +608,37 @@ export default function Home() {
 
   // Experience points as arrays for bullet points and line breaks
   const experiencePointsUSAA = [
-    "Architected and deployed scalable, full-stack features for a member-facing financial analytics platform using Python (Django) and React, supporting 10,000+ daily active sessions.",
-    "Engineered secure RESTful APIs utilizing JWT for authentication and PostgreSQL for data persistence, improving data retrieval efficiency by 30%.",
-    "Automated legacy manual tracking processes, transitioning internal stakeholders from static Excel workflows to a centralized, real-time analytics dashboard that boosted user engagement by 40%.",
-    "Containerized microservices using Docker and managed cloud deployments to AWS via CI/CD pipelines, reducing deployment errors and manual overhead by 25%.",
-    "Authored comprehensive unit and integration tests (Pytest/Jest), achieving 90% code coverage to ensure high-reliability and security in a compliance-heavy financial environment.",
-    "Collaborated in an Agile environment, contributing to a 15% faster delivery of the product MVP through the development of a reusable React component library."
+    "Built full-stack features using Java (Spring Boot) and React for a member-facing financial analytics platform, supporting 10K+ daily active users and improving access to real-time financial data.",
+    "Designed and developed secure REST APIs (Spring Boot, JWT) for backend services handling financial data processing, reducing dependency on manual workflows.",
+    "Identified performance bottlenecks using logs and query analysis, optimized Hibernate/JPA queries (reduced joins, added indexing), improving API response time by ~30%.",
+    "Led the transition from Excel-based tracking to a centralized real-time dashboard, reducing manual effort by ~40% and improving data accuracy.",
+    "Owned deployment workflows by containerizing services using Docker and managing CI/CD pipelines on AWS, improving release reliability and reducing environment-related issues.",
+    "Strengthened system reliability by adding unit and integration tests (JUnit, Mockito), achieving ~90% coverage for critical services."
 ];
 
   const experiencePointsAccenture = [
-    "Engineered scalable backend RESTful APIs in Python for a clinical trial platform, accelerating the delivery of critical data features to research scientists by 25%.",
-    "Leveraged Kafka within an event-driven architecture to scale real-time clinical data ingestion, ensuring high-throughput processing and zero-latency alerts for critical patient updates.",
-    "Orchestrated robust CI/CD pipelines using Jenkins and Docker, fully automating the deployment workflow to Microsoft Azure and ensuring 99.9% system availability.",
-    "Developed internal automation tools and interactive data dashboards in React, reducing the manual data aggregation workload for research teams by 20%.",
-    "Optimized legacy code and engineered automated validation suites achieving 85% test coverage, reducing critical bug rates by 30% for compliance-focused components.",
-    "Participated in rigorous code reviews and Agile sprint planning, mentoring junior developers to maintain high architectural standards and ensure zero-defect delivery."
+    "Developed and maintained Spring Boot microservices for a clinical trial platform, enabling scalable processing of patient and research data.",
+    "Designed and implemented REST APIs, improving data retrieval efficiency by ~20-25% for internal healthcare applications.",
+    "Built Kafka-based event-driven pipelines to process clinical data updates, enabling near real-time alerts and reducing delays for critical events.",
+    "Automated CI/CD workflows using Jenkins and Docker, reducing deployment time from hours to minutes and improving release consistency.",
+    "Developed React-based dashboards and internal tools, reducing manual data aggregation effort by ~20% for research teams.",
+    "Improved legacy system stability by refactoring backend code and adding automated test suites, reducing production defects by ~25-30%.",
+    "Participated in code reviews and Agile development, contributing to better code quality and mentoring junior developers."
   ];
 
   const certifications = [
+  {
+    title: "Master Spring Boot 3 & Spring Framework 6 with Java",
+    org: "Udemy",
+    date: "Issued Apr 2026",
+    link: "https://www.udemy.com/certificate/UC-248396b2-05bd-408a-b9f3-081e6c83ff97/",
+  },
+  {
+    title: "Functional Programming with Lambdas & Streams",
+    org: "Udemy",
+    date: "Issued Dec 2025",
+    link: "https://www.udemy.com/certificate/UC-40c3807a-ec83-4e8c-8f72-4e9e46ed9ef8/",
+  },
   {
     title: "Career Essentials in Generative AI by Microsoft and LinkedIn Learning Path",
     org: "Microsoft",
@@ -743,13 +756,29 @@ export default function Home() {
             >
               <ProjectTitle>Distributed-ingestion-system</ProjectTitle>
               <ProjectDescription>
-                An end-to-end data pipeline using Python, Flask, and AWS S3 to manage high-volume, concurrent file uploads. Containerized with Docker and monitored with Prometheus, this system improved data ingestion reliability by 80%.
+                Built a distributed file ingestion backend to handle high-volume concurrent uploads to AWS S3 with real-time tracking, designing scalable REST APIs and containerizing the system with Docker to reduce deployment overhead by ~70%. Implemented monitoring using Prometheus and Grafana to track system health and request patterns, improving reliability and observability by ~80%, and deployed using CI/CD pipelines with GitHub Actions and Docker Hub.              
               </ProjectDescription>
               <ProjectLink>
                 View Project <FaArrowRight />
               </ProjectLink>
             </ProjectCard>
 
+            <ProjectCard
+                  href="https://github.com/CEN5035-Fall2023-SE/cen5035-se-final-project-se-final-project-group10"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.1 }}
+                >
+                  <ProjectTitle>TA Hub: TA Management Portal at North University&apos;s Computer Science Department</ProjectTitle>
+                  <ProjectDescription>
+                    An award-winning TA management portal architected with Java, Spring Boot, and React.js. By automating the entire lifecycle across four role-based portals, this solution reduced administrative workload by 60% and accelerated the assignment process by over 75%.
+                  </ProjectDescription>
+                  <ProjectLink>
+                    View Project <FaArrowRight />
+                  </ProjectLink>
+            </ProjectCard>
 
 
             <ProjectCard
@@ -798,7 +827,7 @@ export default function Home() {
             >
               <ProjectTitle>portfolio-analytics-dashboard</ProjectTitle>
               <ProjectDescription>
-                A full-stack analytics platform using React, Node.js, and Python to visualize real-time user engagement. Containerized with Docker, this tool increased data insight granularity by 65% and boosted user engagement by 60%.
+                A full-stack analytics platform using React, and Node.js to visualize real-time user engagement. Containerized with Docker, this tool increased data insight granularity by 65% and boosted user engagement by 60%.
               </ProjectDescription>
               <ProjectLink>
                 View Project <FaArrowRight />
@@ -840,23 +869,6 @@ export default function Home() {
             </ProjectCard>
 
 
-            <ProjectCard
-              href="https://github.com/CEN5035-Fall2023-SE/cen5035-se-final-project-se-final-project-group10"
-              target="_blank"
-              rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.1 }}
-            >
-              <ProjectTitle>TA Hub: TA Management Portal at North University&apos;s Computer Science Department</ProjectTitle>
-              <ProjectDescription>
-                An award-winning TA management portal architected with Java, Spring Boot, and React.js. By automating the entire lifecycle across four role-based portals, this solution reduced administrative workload by 60% and accelerated the assignment process by over 75%.
-              </ProjectDescription>
-              <ProjectLink>
-                View Project <FaArrowRight />
-              </ProjectLink>
-            </ProjectCard>
-
             
           </ProjectGrid>
         </Container>
@@ -892,21 +904,20 @@ export default function Home() {
                   ))}
                 </Description>
                 <TechStack>
-                  <TechTag>Python</TechTag>
-                  <TechTag>Flask</TechTag>
-                  <TechTag>Django</TechTag>
+                  <TechTag>Java</TechTag>
+                  <TechTag>Spring Boot</TechTag>
                   <TechTag>React</TechTag>
                   <TechTag>JavaScript</TechTag>
                   <TechTag>REST APIs</TechTag>
+                  <TechTag>Spring Security</TechTag>
+                  <TechTag>Hibernate</TechTag>
+                  <TechTag>JPA</TechTag>
+                  <TechTag>PostgreSQL</TechTag>
                   <TechTag>AWS</TechTag>
-                  <TechTag>CI/CD</TechTag>
                   <TechTag>Docker</TechTag>
+                  <TechTag>CI/CD</TechTag>
+                  <TechTag>Git</TechTag>
                   <TechTag>Agile</TechTag>
-                  <TechTag>Financial Data Analysis</TechTag>
-                  <TechTag>Data Visualization</TechTag>
-                  <TechTag>SQL</TechTag>
-                  <TechTag>Secure Application Development</TechTag>
-
                 </TechStack>
               </ExperienceContent>
 
@@ -925,14 +936,19 @@ export default function Home() {
                   ))}
                 </Description>
                 <TechStack>
-                  <TechTag>Python</TechTag>
-                  <TechTag>React</TechTag>
+                  <TechTag>Java</TechTag>
+                  <TechTag>Spring Boot</TechTag>
+                  <TechTag>Microservices</TechTag>
                   <TechTag>REST APIs</TechTag>
-                  <TechTag>CI/CD</TechTag>
+                  <TechTag>Apache Kafka</TechTag>
+                  <TechTag>React</TechTag>
+                  <TechTag>JavaScript</TechTag>
+                  <TechTag>SQL</TechTag>
                   <TechTag>Jenkins</TechTag>
                   <TechTag>Docker</TechTag>
                   <TechTag>Microsoft Azure</TechTag>
                   <TechTag>Git</TechTag>
+                  <TechTag>CI/CD</TechTag>
                   <TechTag>Agile</TechTag>
                 </TechStack>
               </ExperienceContent>
@@ -963,23 +979,17 @@ export default function Home() {
               </CategoryHeader>
               <TechChips>
                 <TechChip>Full-Stack Development</TechChip>
-                <TechChip>Data Engineering & Pipelines</TechChip>
-                <TechChip>Cloud & DevOps (AWS/Azure)</TechChip>
+                <TechChip>Backend Engineering</TechChip>
+                <TechChip>Microservices Architecture</TechChip>
+                <TechChip>REST API Design & Development</TechChip>
+                <TechChip>Event-Driven Systems</TechChip>
+                <TechChip>Cloud & DevOps (AWS)</TechChip>
                 <TechChip>Distributed Systems</TechChip>
                 <TechChip>System Design & Architecture</TechChip>
-                <TechChip>Deep Learning</TechChip>
-                <TechChip>Data Analysis</TechChip>
-                <TechChip>Generative AI</TechChip>
-                <TechChip>Machine Learning</TechChip>
-                <TechChip>RAG (Retrieval-Augmented Generation)</TechChip>
-                <TechChip>Prompt Engineering</TechChip>
-                <TechChip>Agentic AI</TechChip>
+                <TechChip>Database Design & Optimization</TechChip>
                 <TechChip>Software Development Lifecycle</TechChip>
                 <TechChip>Agile Methodologies</TechChip>
                 <TechChip>Collaboration & Teamwork</TechChip>
-                <TechChip>Open Source Contributions</TechChip>
-
-  
               </TechChips>
             </SkillCategory>
 
@@ -993,41 +1003,35 @@ export default function Home() {
                 <CategoryTitle>Technologies</CategoryTitle>
               </CategoryHeader>
               <TechChips>
-              <TechChip>Python</TechChip>
-              <TechChip>Java</TechChip>
-              <TechChip>JavaScript</TechChip>
-              <TechChip>TypeScript</TechChip>
-              <TechChip>React</TechChip>
-              <TechChip>Node.js</TechChip>
-              <TechChip>Flask</TechChip>
-              <TechChip>REST API</TechChip>
-              <TechChip>SQL</TechChip>
-              <TechChip>NoSQL</TechChip>
-              <TechChip>PostgreSQL</TechChip>
-              <TechChip>MongoDB</TechChip>
-              <TechChip>AWS</TechChip>
-              <TechChip>Azure</TechChip>
-              <TechChip>GCP</TechChip>
-              <TechChip>Docker</TechChip>
-              <TechChip>CI/CD</TechChip>
-              <TechChip>Git</TechChip>
-              <TechChip>Terraform</TechChip>
-              <TechChip>Prometheus</TechChip>
-              <TechChip>Grafana</TechChip>
-              <TechChip>Jenkins</TechChip>
-              <TechChip>GitHub Actions</TechChip>
-              <TechChip>Agile</TechChip>
-              <TechChip>Microservices</TechChip>
-              <TechChip>GraphQL</TechChip>
-              <TechChip>Generative AI</TechChip>
-              <TechChip>LLM</TechChip>
-              <TechChip>LangChain</TechChip>
-              <TechChip>OpenAI</TechChip>
-              <TechChip>PyTorch</TechChip>
-              <TechChip>TensorFlow</TechChip>
-              <TechChip>NumPy</TechChip>  
-              <TechChip>Pandas</TechChip>
-              <TechChip>Scikit-learn</TechChip>
+                <TechChip>Java</TechChip>
+                <TechChip>Python</TechChip>
+                <TechChip>Spring Boot</TechChip>
+                <TechChip>Spring Security</TechChip>
+                <TechChip>Hibernate</TechChip>
+                <TechChip>JPA</TechChip>
+                <TechChip>REST API</TechChip>
+                <TechChip>JavaScript</TechChip>
+                <TechChip>TypeScript</TechChip>
+                <TechChip>React</TechChip>
+                <TechChip>HTML</TechChip>
+                <TechChip>CSS</TechChip>
+                <TechChip>PostgreSQL</TechChip>
+                <TechChip>MySQL</TechChip>
+                <TechChip>MongoDB</TechChip>
+                <TechChip>Apache Kafka</TechChip>
+                <TechChip>Redis</TechChip>
+                <TechChip>AWS (EC2, S3, ECS)</TechChip>
+                <TechChip>Docker</TechChip>
+                <TechChip>Jenkins</TechChip>
+                <TechChip>GitHub Actions</TechChip>
+                <TechChip>CI/CD</TechChip>
+                <TechChip>JUnit</TechChip>
+                <TechChip>Mockito</TechChip>
+                <TechChip>Postman</TechChip>
+                <TechChip>Git</TechChip>
+                <TechChip>Linux</TechChip>
+                <TechChip>JWT</TechChip>
+                <TechChip>Microservices</TechChip>
               </TechChips>
             </SkillCategory>
           </SkillsGrid>
