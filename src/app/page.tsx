@@ -599,9 +599,9 @@ const CertificationLink = styled.a`
 
 export default function Home() {
   const badgeTitles = [    
-    'Full Stack Developer',
-    'Building AI-Powered Products',
-    'Python (Flask/Django) | React | AWS & CI/CD',
+    'Full Stack Software Engineer',
+    'Building Scalable, Production-Ready Applications',
+    'Java & Spring Boot | React | AWS & CI/CD | Kafka & Microservices',
   ];
   const [badgeIdx, setBadgeIdx] = useState(0);
   const [isMounted, setIsMounted] = useState(false);
