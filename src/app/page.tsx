@@ -599,7 +599,7 @@ const CertificationLink = styled.a`
 
 export default function Home() {
   const badgeTitles = [    
-    'Full Stack Software Engineer',
+    'Full Stack Developer',
     'Building Scalable, Production-Ready Applications',
     'Java & Spring Boot | React | AWS & CI/CD | Kafka & Microservices',
   ];
@@ -724,7 +724,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 1, ease: 'easeOut' }}
           >
-            Austin, TX, United States<br />
+            Delray Beach, FL, United States<br />
             <a href="mailto:pranay.thotakura@gmail.com">pranay.thotakura@gmail.com</a> &nbsp;<br />
             <a href="https://www.linkedin.com/in/pranay-babu-totakura" target="_blank" rel="noopener noreferrer">linkedin.com/in/pranay-babu-totakura</a> &nbsp;|&nbsp; <a href="https://github.com/ptotakura2023" target="_blank" rel="noopener noreferrer">https://github.com/ptotakura2023</a>
           </ContactBlock>
@@ -892,7 +892,7 @@ export default function Home() {
             >
               <ExperienceHeader>
                 <CompanyName>USAA</CompanyName>
-                <Role>FullStack Developer</Role>
+                <Role>Full Stack Developer</Role>
                 <Duration>Jan 2025 - Present</Duration>
               </ExperienceHeader>
               <ExperienceContent>
@@ -924,7 +924,7 @@ export default function Home() {
 
               <ExperienceHeader>
                 <CompanyName>Accenture</CompanyName>
-                <Role>Software Engineer - FullStack & Devops</Role>
+                <Role>Advanced App Engineering Associate</Role>
                 <Duration>Jun 2020 - Jul 2023</Duration>
               </ExperienceHeader>
               <ExperienceContent>
