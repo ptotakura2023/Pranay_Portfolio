@@ -2,7 +2,16 @@
 
 import styled, { keyframes } from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaArrowRight, FaBrain, FaCode, FaEnvelopeOpenText } from 'react-icons/fa';
+import { FaArrowRight,
+  FaBrain,
+  FaCode,
+  FaEnvelopeOpenText,
+  FaServer,
+  FaLaptopCode,
+  FaCloud,
+  FaDatabase,
+  FaGraduationCap,
+ } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 
 // Keyframes for blinking and scaling animation
@@ -598,32 +607,31 @@ const CertificationLink = styled.a`
 
 
 export default function Home() {
-  const badgeTitles = [    
-    'Full Stack Developer',
-    'Building Scalable, Production-Ready Applications',
-    'Java & Spring Boot | React | AWS & CI/CD | Kafka & Microservices',
+  const badgeTitles = [
+    'Full Stack Engineer',
+    'Java 17 & Spring Boot | Python & FastAPI | React & TypeScript',
+    'Generative AI | RAG Pipelines | Agentic Workflows | AWS',
   ];
   const [badgeIdx, setBadgeIdx] = useState(0);
   const [isMounted, setIsMounted] = useState(false);
 
   // Experience points as arrays for bullet points and line breaks
-  const experiencePointsUSAA = [
-    "Built full-stack features using Java (Spring Boot) and React for a member-facing financial analytics platform, supporting 10K+ daily active users and improving access to real-time financial data.",
-    "Designed and developed secure REST APIs (Spring Boot, JWT) for backend services handling financial data processing, reducing dependency on manual workflows.",
-    "Identified performance bottlenecks using logs and query analysis, optimized Hibernate/JPA queries (reduced joins, added indexing), improving API response time by ~30%.",
-    "Led the transition from Excel-based tracking to a centralized real-time dashboard, reducing manual effort by ~40% and improving data accuracy.",
-    "Owned deployment workflows by containerizing services using Docker and managing CI/CD pipelines on AWS, improving release reliability and reducing environment-related issues.",
-    "Strengthened system reliability by adding unit and integration tests (JUnit, Mockito), achieving ~90% coverage for critical services."
-];
+  const experiencePointsNorthernTrust = [
+    "Architect full stack features for wealth-management client-servicing platforms with Java 17/Spring Boot microservices and React/TypeScript front ends, serving 300+ institutional and high-net-worth accounts.",
+    "Deliver a Generative AI document-intelligence service (Python, LangChain, RAG on pgvector) that answers inquiries over custody agreements and fee schedules, shortening servicing research time by 40%.",
+    "Ship LLM-assisted client-reporting workflows with retrieval grounding, prompt templates, and evaluation guardrails, sustaining 95%+ factual accuracy on regulated reporting checks.",
+    "Engineer Python reconciliation pipelines across custody and asset-servicing datasets, reducing manual intervention in recurring operations workflows by 30%.",
+    "Secure portfolio, transaction, and reference-data APIs with OAuth2/JWT and API Gateway, improving p95 latency 35% through Redis caching and query optimization.",
+    "Automate Docker-to-AWS EKS releases via Jenkins/GitHub Actions with 80% JUnit/PyTest coverage and Datadog observability, cutting incident triage time 25% in Agile delivery squads."
+  ];
 
-  const experiencePointsAccenture = [
-    "Developed and maintained Spring Boot microservices for a clinical trial platform, enabling scalable processing of patient and research data.",
-    "Designed and implemented REST APIs, improving data retrieval efficiency by ~20-25% for internal healthcare applications.",
-    "Built Kafka-based event-driven pipelines to process clinical data updates, enabling near real-time alerts and reducing delays for critical events.",
-    "Automated CI/CD workflows using Jenkins and Docker, reducing deployment time from hours to minutes and improving release consistency.",
-    "Developed React-based dashboards and internal tools, reducing manual data aggregation effort by ~20% for research teams.",
-    "Improved legacy system stability by refactoring backend code and adding automated test suites, reducing production defects by ~25-30%.",
-    "Participated in code reviews and Agile development, contributing to better code quality and mentoring junior developers."
+  const experiencePointsWebCode = [
+    "Developed digital banking and payments modules covering onboarding, fund transfers, bill payments, and loan servicing with Java 11/Spring Boot and React/Redux, supporting 50K+ monthly transactions.",
+    "Integrated UPI, net-banking, and card rails (Razorpay) with idempotency, retry, and audit handling, holding exactly-once settlement accuracy at 99.9%.",
+    "Implemented digital KYC onboarding with Spring Security, OAuth2/JWT, and field-level encryption aligned to RBI guidelines, trimming customer verification from 3 days to under 6 hours.",
+    "Modeled transaction and ledger schemas in MySQL/PostgreSQL and scheduled Python settlement batch jobs, reducing manual reconciliation effort 40%.",
+    "Streamed Kafka payment-status and fraud-check events across services, improving p95 API latency 30% under peak transaction loads via Redis caching and query tuning.",
+    "Expanded JUnit and PyTest coverage over payment edge cases (timeouts, duplicates, partial failures) in Jenkins/Docker CI/CD, lowering production defects 35% release-over-release."
   ];
 
   const certifications = [
@@ -881,9 +889,9 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <GradientTitle>Work Experience</GradientTitle>
+            <GradientTitle>Professional Experience</GradientTitle>
           </SectionTitle>
-          
+
           <ExperienceGrid>
             <ExperienceCard
               initial={{ opacity: 0, y: 20 }}
@@ -891,71 +899,86 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.1 }}
             >
               <ExperienceHeader>
-                <CompanyName>USAA</CompanyName>
-                <Role>Full Stack Developer</Role>
-                <Duration>Jan 2025 - Present</Duration>
+                <CompanyName>Wealth Management &amp; Asset Servicing</CompanyName>
+                <Role>Northern Trust</Role>
+                <Duration>Full Stack Engineer</Duration>
+                <Duration>Jan 2025 - Present &nbsp;|&nbsp; Boca Raton, FL</Duration>
               </ExperienceHeader>
               <ExperienceContent>
                 <Description as="ul">
-                  {experiencePointsUSAA.map((point, idx) => (
+                  {experiencePointsNorthernTrust.map((point, idx) => (
                     <li key={idx} style={{ marginBottom: 8, lineHeight: 1.7 }}>
                       {point}
                     </li>
                   ))}
                 </Description>
                 <TechStack>
-                  <TechTag>Java</TechTag>
+                  <TechTag>Java 17</TechTag>
                   <TechTag>Spring Boot</TechTag>
+                  <TechTag>Python</TechTag>
+                  <TechTag>FastAPI</TechTag>
                   <TechTag>React</TechTag>
-                  <TechTag>JavaScript</TechTag>
-                  <TechTag>REST APIs</TechTag>
-                  <TechTag>Spring Security</TechTag>
-                  <TechTag>Hibernate</TechTag>
-                  <TechTag>JPA</TechTag>
+                  <TechTag>TypeScript</TechTag>
+                  <TechTag>LangChain</TechTag>
+                  <TechTag>RAG</TechTag>
+                  <TechTag>pgvector</TechTag>
+                  <TechTag>OAuth2/JWT</TechTag>
                   <TechTag>PostgreSQL</TechTag>
-                  <TechTag>AWS</TechTag>
+                  <TechTag>Redis</TechTag>
+                  <TechTag>AWS EKS</TechTag>
                   <TechTag>Docker</TechTag>
-                  <TechTag>CI/CD</TechTag>
-                  <TechTag>Git</TechTag>
+                  <TechTag>Jenkins</TechTag>
+                  <TechTag>GitHub Actions</TechTag>
+                  <TechTag>Datadog</TechTag>
                   <TechTag>Agile</TechTag>
                 </TechStack>
               </ExperienceContent>
+            </ExperienceCard>
 
-
+            <ExperienceCard
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
               <ExperienceHeader>
-                <CompanyName>Accenture</CompanyName>
-                <Role>Advanced App Engineering Associate</Role>
-                <Duration>Jun 2020 - Jul 2023</Duration>
+                <CompanyName>BFSI - Digital Banking &amp; Payments</CompanyName>
+                <Role>WebCode IT</Role>
+                <Duration>Full Stack Engineer</Duration>
+                <Duration>Jan 2021 - Jul 2023 &nbsp;|&nbsp; Hyderabad, India</Duration>
               </ExperienceHeader>
               <ExperienceContent>
                 <Description as="ul">
-                  {experiencePointsAccenture.map((point, idx) => (
+                  {experiencePointsWebCode.map((point, idx) => (
                     <li key={idx} style={{ marginBottom: 8, lineHeight: 1.7 }}>
                       {point}
                     </li>
                   ))}
                 </Description>
                 <TechStack>
-                  <TechTag>Java</TechTag>
+                  <TechTag>Java 11</TechTag>
                   <TechTag>Spring Boot</TechTag>
-                  <TechTag>Microservices</TechTag>
-                  <TechTag>REST APIs</TechTag>
-                  <TechTag>Apache Kafka</TechTag>
+                  <TechTag>Spring Security</TechTag>
                   <TechTag>React</TechTag>
-                  <TechTag>JavaScript</TechTag>
-                  <TechTag>SQL</TechTag>
+                  <TechTag>Redux</TechTag>
+                  <TechTag>Python</TechTag>
+                  <TechTag>Apache Kafka</TechTag>
+                  <TechTag>MySQL</TechTag>
+                  <TechTag>PostgreSQL</TechTag>
+                  <TechTag>Redis</TechTag>
+                  <TechTag>OAuth2/JWT</TechTag>
+                  <TechTag>Razorpay</TechTag>
                   <TechTag>Jenkins</TechTag>
                   <TechTag>Docker</TechTag>
-                  <TechTag>Microsoft Azure</TechTag>
-                  <TechTag>Git</TechTag>
+                  <TechTag>JUnit</TechTag>
+                  <TechTag>PyTest</TechTag>
                   <TechTag>CI/CD</TechTag>
-                  <TechTag>Agile</TechTag>
                 </TechStack>
               </ExperienceContent>
             </ExperienceCard>
           </ExperienceGrid>
         </Container>
       </ExperienceSection>
+
 
       <SkillsSection>
         <Container>
@@ -964,9 +987,9 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <GradientTitle>Skills & Technologies</GradientTitle>
+            <GradientTitle>Technical Skills</GradientTitle>
           </SectionTitle>
-          
+
           <SkillsGrid>
             <SkillCategory
               initial={{ opacity: 0, y: 20 }}
@@ -974,22 +997,15 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.1 }}
             >
               <CategoryHeader>
-                <CategoryIcon><FaBrain /></CategoryIcon>
-                <CategoryTitle>Core Skills</CategoryTitle>
+                <CategoryIcon><FaCode /></CategoryIcon>
+                <CategoryTitle>Languages</CategoryTitle>
               </CategoryHeader>
               <TechChips>
-                <TechChip>Full-Stack Development</TechChip>
-                <TechChip>Backend Engineering</TechChip>
-                <TechChip>Microservices Architecture</TechChip>
-                <TechChip>REST API Design & Development</TechChip>
-                <TechChip>Event-Driven Systems</TechChip>
-                <TechChip>Cloud & DevOps (AWS)</TechChip>
-                <TechChip>Distributed Systems</TechChip>
-                <TechChip>System Design & Architecture</TechChip>
-                <TechChip>Database Design & Optimization</TechChip>
-                <TechChip>Software Development Lifecycle</TechChip>
-                <TechChip>Agile Methodologies</TechChip>
-                <TechChip>Collaboration & Teamwork</TechChip>
+                <TechChip>Python</TechChip>
+                <TechChip>Java</TechChip>
+                <TechChip>JavaScript</TechChip>
+                <TechChip>TypeScript</TechChip>
+                <TechChip>SQL</TechChip>
               </TechChips>
             </SkillCategory>
 
@@ -999,39 +1015,116 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <CategoryHeader>
-                <CategoryIcon><FaCode /></CategoryIcon>
-                <CategoryTitle>Technologies</CategoryTitle>
+                <CategoryIcon><FaBrain /></CategoryIcon>
+                <CategoryTitle>Generative AI / ML</CategoryTitle>
               </CategoryHeader>
               <TechChips>
-                <TechChip>Java</TechChip>
-                <TechChip>Python</TechChip>
+                <TechChip>OpenAI API</TechChip>
+                <TechChip>Anthropic (Claude) API</TechChip>
+                <TechChip>LangChain</TechChip>
+                <TechChip>RAG Pipelines</TechChip>
+                <TechChip>Prompt Engineering</TechChip>
+                <TechChip>Pinecone</TechChip>
+                <TechChip>pgvector</TechChip>
+                <TechChip>FAISS</TechChip>
+                <TechChip>Hugging Face Transformers</TechChip>
+                <TechChip>Agentic AI (MCP)</TechChip>
+                <TechChip>LLM Evaluation &amp; Guardrails</TechChip>
+              </TechChips>
+            </SkillCategory>
+
+            <SkillCategory
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              <CategoryHeader>
+                <CategoryIcon><FaServer /></CategoryIcon>
+                <CategoryTitle>Backend</CategoryTitle>
+              </CategoryHeader>
+              <TechChips>
                 <TechChip>Spring Boot</TechChip>
-                <TechChip>Spring Security</TechChip>
-                <TechChip>Hibernate</TechChip>
-                <TechChip>JPA</TechChip>
-                <TechChip>REST API</TechChip>
-                <TechChip>JavaScript</TechChip>
-                <TechChip>TypeScript</TechChip>
+                <TechChip>Spring MVC</TechChip>
+                <TechChip>Hibernate/JPA</TechChip>
+                <TechChip>FastAPI</TechChip>
+                <TechChip>Flask</TechChip>
+                <TechChip>Node.js/Express</TechChip>
+                <TechChip>RESTful APIs</TechChip>
+                <TechChip>GraphQL</TechChip>
+                <TechChip>gRPC</TechChip>
+                <TechChip>Microservices</TechChip>
+                <TechChip>Apache Kafka</TechChip>
+              </TechChips>
+            </SkillCategory>
+
+            <SkillCategory
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              <CategoryHeader>
+                <CategoryIcon><FaLaptopCode /></CategoryIcon>
+                <CategoryTitle>Frontend</CategoryTitle>
+              </CategoryHeader>
+              <TechChips>
                 <TechChip>React</TechChip>
-                <TechChip>HTML</TechChip>
-                <TechChip>CSS</TechChip>
+                <TechChip>Redux</TechChip>
+                <TechChip>Next.js</TechChip>
+                <TechChip>HTML5</TechChip>
+                <TechChip>CSS3</TechChip>
+                <TechChip>Tailwind CSS</TechChip>
+                <TechChip>Responsive &amp; Accessible UI</TechChip>
+              </TechChips>
+            </SkillCategory>
+
+            <SkillCategory
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+            >
+              <CategoryHeader>
+                <CategoryIcon><FaCloud /></CategoryIcon>
+                <CategoryTitle>Cloud &amp; DevOps</CategoryTitle>
+              </CategoryHeader>
+              <TechChips>
+                <TechChip>AWS EC2</TechChip>
+                <TechChip>AWS S3</TechChip>
+                <TechChip>AWS Lambda</TechChip>
+                <TechChip>AWS EKS</TechChip>
+                <TechChip>AWS RDS</TechChip>
+                <TechChip>API Gateway</TechChip>
+                <TechChip>Docker</TechChip>
+                <TechChip>Kubernetes</TechChip>
+                <TechChip>Jenkins</TechChip>
+                <TechChip>GitHub Actions</TechChip>
+                <TechChip>Terraform</TechChip>
+                <TechChip>CI/CD</TechChip>
+              </TechChips>
+            </SkillCategory>
+
+            <SkillCategory
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <CategoryHeader>
+                <CategoryIcon><FaDatabase /></CategoryIcon>
+                <CategoryTitle>Databases &amp; Testing</CategoryTitle>
+              </CategoryHeader>
+              <TechChips>
                 <TechChip>PostgreSQL</TechChip>
                 <TechChip>MySQL</TechChip>
                 <TechChip>MongoDB</TechChip>
-                <TechChip>Apache Kafka</TechChip>
                 <TechChip>Redis</TechChip>
-                <TechChip>AWS (EC2, S3, ECS)</TechChip>
-                <TechChip>Docker</TechChip>
-                <TechChip>Jenkins</TechChip>
-                <TechChip>GitHub Actions</TechChip>
-                <TechChip>CI/CD</TechChip>
+                <TechChip>Oracle</TechChip>
                 <TechChip>JUnit</TechChip>
-                <TechChip>Mockito</TechChip>
+                <TechChip>PyTest</TechChip>
+                <TechChip>Jest</TechChip>
                 <TechChip>Postman</TechChip>
+                <TechChip>Swagger/OpenAPI</TechChip>
                 <TechChip>Git</TechChip>
-                <TechChip>Linux</TechChip>
-                <TechChip>JWT</TechChip>
-                <TechChip>Microservices</TechChip>
+                <TechChip>Jira</TechChip>
+                <TechChip>Agile/Scrum</TechChip>
               </TechChips>
             </SkillCategory>
           </SkillsGrid>
